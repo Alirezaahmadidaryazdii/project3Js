@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body class="">
+    <section class="header m-0">
+      <nav class="m-0 p-0">
+        <div class="d-flex justify-content-between align-items-center m-0 p-0">
+          <div class="d-flex">
+            <img
+              src="../public/img/download.svg"
+              class="logo"
+              width="100px"
+              alt=""
+            />
+            <div
+              class="search-box d-flex justify-content-center align-items-center d-none d-lg-block"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="search" />
+              <select class="">
+                <option selected>All categories</option>
+                <option value="Games">Games</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Support">Support</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mx-2">
+            <ul
+              class="d-md-flex list-unstyled justify-content-center align-items-center mt-3 d-none"
+            >
+              <li class="list-item mx-3 text-decoration-none">
+                <i class="fa-solid fa-message"></i>
+                <a href="" class="text-decoration-none text-black">Support</a>
+              </li>
+              <li class="list-item mx-3 text-decoration-none">
+                <i class="fa-solid fa-heart"></i>
+                <a href="" class="text-decoration-none text-black">Wish List</a>
+              </li>
+              <li class="list-item mx-3 text-decoration-none">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="" class="text-decoration-none text-black">Cart</a>
+              </li>
+              <li class="list-item mx-3 text-decoration-none">
+                <i class="fa-solid fa-user"></i>
+                <a href="" class="text-decoration-none text-black"
+                  >Login / Logout</a
+                >
+              </li>
+            </ul>
+            <img
+              src="../public/img/FlagUsaIconRegionSelect.webp"
+              width="40px"
+              id="img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="header-part2 mt-3 mb-0 d-none d-md-block">
+      <div class="d-flex justify-content-center align-items-center gap-4">
+        <div
+          class="d-flex justify-content-center align-items-center gap-2"
+          id="dj"
+        >
+          <i class="fa-solid fa-cloud text-danger"></i>
+          <p class="text-danger mb-0">My nintedo Store</p>
+          <i class="fa-solid fa-circle-arrow-down text-danger"></i>
+        </div>
+        <div
+          class="d-flex text-muted justify-content-center align-items-center gap-2"
+          id="un-active"
+        >
+          <i class="fa-solid fa-square-plus"></i>
+          <p class="mb-0">Games</p>
+          <i class="fa-solid fa-circle-arrow-down"></i>
+        </div>
+        <div
+          class="d-flex text-muted justify-content-center align-items-center gap-2"
+          id="un-active"
+        >
+          <i class="fa-solid fa-credit-card"></i>
+          <p class="mb-0">Nintendo Switch</p>
+          <i class="fa-solid fa-circle-arrow-down"></i>
+        </div>
+        <div
+          class="d-flex text-muted justify-content-center align-items-center gap-2"
+          id="un-active"
+        >
+          <i class="fa-solid fa-message"></i>
+          <p class="mb-0">New & Events</p>
+          <i class="fa-solid fa-circle-arrow-down"></i>
+        </div>
+        <div
+          class="d-flex text-muted justify-content-center align-items-center gap-2"
+          id="un-active"
+        >
+          <i class="fa-solid fa-star"></i>
+          <p class="mb-0">Play Nintendo</p>
+          <i class="fa-solid fa-circle-arrow-down"></i>
+        </div>
+      </div>
+      <!-- <div class="show-data-header">
+            <div class="header-show-data d-flex justify-content-center">
+                <img src="../public/img/download (1).svg" class="text-center m-auto" width="200px" alt="">
+                <i class="fa-solid fa-circle-xmark text-white"></i>
+            </div> -->
+      <!-- <div class="body-show-data mx-5 my-3">
+                <div class="row p-3">
+                    <div class="col-lg-2">
+                        <div class="head-card-show d-flex">
+                            <i class="fa-solid fa-circle-plus text-danger"></i>
+                            <h5>Games</h5>
+                        </div>
+                        <p class="text-muted" id="txt-show-body">Nintendo switch games</p>
+                        <p class="text-muted" id="txt-show-body">New releases</p>
+                        <p class="text-muted" id="txt-show-body">sale & deals</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="head-card-show d-flex">
+                            <i class="fa-solid fa-gamepad text-danger"></i>
+                            <h5>Hardware</h5>
+                        </div>
+                        <p class="text-muted" id="txt-show-body">Nintendo switch system</p>
+                        <p class="text-muted" id="txt-show-body">Jo - Con controls</p>
+                        <p class="text-muted" id="txt-show-body">case & more</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="head-card-show d-flex">
+                            <i class="fa-solid fa-shirt text-danger"></i>
+                            <h5>Merchandis</h5>
+                        </div>
+                        <p class="text-muted" id="txt-show-body">Home & office</p>
+                        <p class="text-muted" id="txt-show-body">Plush</p>
+                        <p class="text-muted" id="txt-show-body">Toys</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="head-card-show d-flex">
+                            <i class="fa-solid fa-star text-danger"></i>
+                            <h5>Store exculisve</h5>
+                        </div>
+                        <p class="text-muted" id="txt-show-body">Exculsive provide</p>
+                        <p class="text-muted" id="txt-show-body">My Nintendo rewards</p>
+                        <p class="text-muted" id="txt-show-body">Nintendo switch online office</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="head-card-show d-flex">
+                            <i class="fa-solid fa-puzzle-piece text-danger"></i>
+                            <h5>Charckters</h5>
+                        </div>
+                        <p class="text-muted" id="txt-show-body">Pikmon</p>
+                        <p class="text-muted" id="txt-show-body">Sploton</p>
+                        <p class="text-muted" id="txt-show-body">Super Mario</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="head-card-show d-flex">
+                            <i class="fa-solid fa-pen-nib text-danger"></i>
+                            <h5>Sale & deals</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <section class="body mt-0">
+      <div class="part1 mt-0 d-none d-md-block">
+        <div class="d-flex justify-content-center">
+          <i class="fa-solid fa-car-side mx-2 text-danger"></i>
+          <span class="text-black d-inline">free shoping </span>
+          <p class="text-muted d-inline mx-1">on orders $50 or more. |</p>
+          <i class="fa-solid fa-coins d-inline mx-2 text-danger"></i>
+          <p class="text-muted d-inline">Earn</p>
+          <span class="text-black d-inline">My nintedto Points</span>
+          <p class="text-muted d-inline mx-1">on Digital game</p>
+        </div>
+      </div>
+      <div class="part2 mt-3">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-12 p-3">
+            <swiper-container
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="mySwiper"
+              thumbs-swiper=".mySwiper2"
+              loop="true"
+              space-between="10"
+              navigation="true"
+            >
+              <swiper-slide>
+                <img src="../public/img/screenshot01.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot03.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot04.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot05.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot06.avif" />
+              </swiper-slide>
+            </swiper-container>
+
+            <swiper-container
+              class="mySwiper2"
+              loop="true"
+              space-between="10"
+              slides-per-view="4"
+              free-mode="true"
+              watch-slides-progress="true"
+            >
+              <swiper-slide>
+                <img src="../public/img/screenshot03.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot04.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot05.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot06.avif" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../public/img/screenshot01.avif" />
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <div
+            class="col-lg-5 col-12 col-md-6 py-5 mt-2 left-body-part2 mx-3 mx-md-auto"
+          >
+            <p class="mb-3">Nintendo Switch</p>
+            <h4 class="mb-2">Stardew Valley</h4>
+            <div class="d-flex justify-content-between doller-like-part2">
+              <h5>$14.9</h5>
+              <i class="fa-regular fa-heart text-danger mx-3" id="heartMain"></i>
+            </div>
+            <p class="text-muted small">Eligible for up to 75 Gold Points</p>
+            <button
+              class="d-flex text-white justify-content-center gap-3 btn-part2 my-3"
+            >
+              <i class="fa-solid fa-download"></i>
+              <p>Direct Download</p>
+            </button>
+            <p class="text-muted small">
+              This item will be sent to your system automatically after
+              purchase.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="part3 mt-5 p-2">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12 px-5 my-4 my-lg-auto">
+            <h3>You're moving to the valley...</h3>
+            <p class="text-muted">
+              You’ve inherited your grandfather’s old farm plot in Stardew
+              Valley. Armed with hand-me-down tools and a few coins, you set out
+              to begin your new life. Can you learn to live off the land and
+              turn these overgrown fields into a thriving home? It won’t be
+              easy. Ever since Joja Corporation came to town, the old ways of
+              life have all but disappeared. The community center, once the
+              town’s most vibrant hub of activity, now lies in shambles. But the
+              valley seems full of opportunity. With a little dedication, you
+              might just be the one to restore Stardew Valley to greatness! Now
+              with Multiplayer! Invite 1-3 players to join you in the valley!
+              Players can
+            </p>
+            <p class="text-danger my-0">Read More</p>
+            <p class="text-muted small">
+              Software description provided by the publisher.
+            </p>
+            <button class="btn text-white" id="button-explore-part3">
+              Explore this game offitiol website
+            </button>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <img
+              src="../public/img/hero (1).avif"
+              width="90%"
+              id="cols2-img-part3"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="part4 mt-4">
+        <div class="row p-5">
+          <div class="col-lg-6 col-12 p-3 right-part4">
+            <h6 class="text-center">ESRB rating</h6>
+            <div class="px-5">
+              <div class="d-flex" id="s02-cols1-part4">
+                <img
+                  src="../public/img/download (3).svg"
+                  class="mx-2"
+                  width="50px"
+                  alt=""
+                />
+                <div>
+                  <p
+                    class="text-muted small border-secondary border-bottom mb-0"
+                  >
+                    fantacy violency use of Alcole Use of Tobcole Simulted,
+                    Gembeling
+                  </p>
+                  <p class="text-muted small">user Intract</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 right-part4">
+            <h6 class="text-center mt-5">Supported play modes</h6>
+            <div class="px-5">
+              <div
+                class="row d-flex justify-content-center align-items-center m-auto rows2-part4"
+              >
+                <div class="col-4">
+                  <img
+                    src="../public/img/download (4).svg"
+                    width="100px"
+                    class="img-cols2-part4 rounded"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../public/img/download (5).svg"
+                    width="100px"
+                    class="img-cols2-part4 rounded"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="../public/img/img.svg"
+                    width="100px"
+                    class="img-cols2-part4 rounded"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="part5 mt-3"></div>
+      <!--part 6  -->
+      <div class="part6 mt-3 p-5">
+        <div class="row body-part6">
+          <div class="col-md-6 col-12">
+            <button class="btn1-part6">ONLINE</button>
+            <p id="para1-part6">
+              Play online, access classic NES™ and Super NES™ games, and more
+              with a Nintendo Switch Online membership
+            </p>
+            <p>This game supports:Online PlaySave Data Cloud</p>
+            <button class="btn btn2-part6">Learn more</button>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="../public/img/Pro-Controller-Hands.png"
+              class="w-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- part 7 -->
+      <div class="part7 mt-3">
+        <h4 class="text-start mx-5">More like this</h4>
+        <swiper-container
+          class="mySwiper3"
+          slides-per-view="3"
+          centered-slides="true"
+          space-between="30" 
+          navigation="true"
+        >
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/19a36bc849f6645fd90f97c1cd77e8e40a757968ee399c29c73b2e3e8d9da3b9.jfif" class="w-100" alt="">
+              <h5 class="head-part7" >My Timer Poria</h5>
+              <p class="text-muted date-part7">20/4/1387</p>
+              <p class="text-black">$14</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="1"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/1.jfif" class="w-100" alt="">
+              <h5 class="head-part7">selector</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$15</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="2"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/19a36bc849f6645fd90f97c1cd77e8e40a757968ee399c29c73b2e3e8d9da3b9.jfif" class="w-100" alt="">
+              <h5 class="head-part7">game bar</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$17</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="3"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/2.jfif" class="w-100" alt="">
+              <h5 class="head-part7">mortal combat</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$20</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="4"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/3.jfif" class="w-100" alt="">
+              <h5 class="head-part7">gta</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$12</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="5"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/4.jfif" class="w-100" alt="">
+              <h5 class="head-part7">cool game</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$11</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="6"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/4.jfif" class="w-100" alt="">
+              <h5 class="head-part7">jdfsjfjsjfsjl</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$14</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="7"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/5.jfif" class="w-100" alt="">
+              <h5 class="head-part7">lorem</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$14</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="8"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/aa76ed4ae6eed8a8160643e1ff1b9f964468270b9ed6a26fdae8bb4f91576ba1.jfif" class="w-100" alt="">
+              <h5 class="head-part7">lorem</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$14</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="9"></i>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card-part7-swiper">
+              <img src="../public/img/aaed8882d691d0f6920791bbe29c0276e710ec58867defd9b941d8d906bb9d69.jfif" class="w-100" alt="">
+              <h5 class="head-part7">lorem</h5>
+              <p class="text-muted">20/4/1387</p>
+              <p class="text-black">$14</p>
+              <div class="d-flex justify-content-between">
+                <p>nintendo</p>
+                <i class="fa-regular fa-heart text-danger" id="10"></i>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <section class="footer">
+      <footer>
+        <div class="part1-footer d-flex justify-content-between">
+          <div class="left-footer">
+            <img src="../public/img/download.svg" alt="">
+          </div>
+          <div class="right-footer d-flex text-white gap-1 gap-md-5">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="part2-footer">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+              <h5 class="head-footer-part2 text-start mx-2">About Nintendo</h5>
+              <p class="items-footer mx-2">Creere</p>
+              <p class="items-footer mx-2">Corporate Social Responsibility</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <h5 class="head-footer-part2 text-start mx-2">shop</h5>
+              <p class="items-footer mx-2">Gamers</p>
+              <p class="items-footer mx-2">Hardware</p>
+              <p class="items-footer mx-2">Marchine</p>
+              <p class="items-footer mx-2">Sales & Deals</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <h5 class="head-footer-part2 text-start mx-2">My Nintendo Store orders</h5>
+              <p class="items-footer mx-2">order details</p>
+              <p class="items-footer mx-2">return & exchanging</p>
+              <p class="items-footer mx-2">F & Q</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <h5 class="head-footer-part2 text-start mx-2">Support</h5>
+              <p class="items-footer mx-2">Nintendo Switch</p>
+              <p class="items-footer mx-2">Nintendo Account</p>
+              <p class="items-footer mx-2">Repaire</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
